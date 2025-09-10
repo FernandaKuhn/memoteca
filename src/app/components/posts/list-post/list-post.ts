@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-list-post',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './list-post.html',
   styleUrl: './list-post.css'
 })

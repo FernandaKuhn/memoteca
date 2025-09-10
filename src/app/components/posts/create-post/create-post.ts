@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-create-post',
-  imports: [FormsModule],
+  standalone: true,
+  imports: [FormsModule, RouterLink],
   templateUrl: './create-post.html',
-  styleUrl: './create-post.css'
+  styleUrls: ['./create-post.css']
 })
 export class CreatePost {
 
@@ -20,9 +22,5 @@ export class CreatePost {
 
   createPost() {
    alert('Post created')
-  }
-
-  cancelPost() {
-   alert('cancelar post')
   }
 }
