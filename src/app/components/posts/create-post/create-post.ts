@@ -21,4 +21,7 @@ export class CreatePost {
    alert('Post created')
   }
 
+  cancelPost() {
+   alert('cancelar post')
+  }
 }

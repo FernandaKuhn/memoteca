@@ -10,6 +10,7 @@
     id="post"
     name="post"
     placeholder="Digite seu pensamento aqui..."
+    [(ngModel)]="post.content"
     >
    <label for="author">Autoria ou fonte</label>
     <input
@@ -18,6 +19,7 @@
     id="author"
     name="author"
     placeholder="Digite a autoria ou fonte aqui..."
+    [(ngModel)]="post.author"
     >
   <label for="model">Selecione o modelo do card</label>
   <div class="container-radio">
@@ -28,6 +30,7 @@
         id="model-one"
         value="model-one"
         name="model-card"
+        [(ngModel)]="post.model"
         >
         <div class="custom-radio">
           <span></span>
@@ -48,6 +51,7 @@
         id="model-two"
         value="model-two"
         name="model-card"
+        [(ngModel)]="post.model"
         >
         <div class="custom-radio">
           <span></span>
@@ -68,6 +72,7 @@
         id="model-three"
         value="model-three"
         name="model-card"
+        [(ngModel)]="post.model"
         >
         <div class="custom-radio">
           <span></span>
@@ -84,7 +89,7 @@
   </div>
   <div class="action">
     <button (click)="createPost()" class="button">Salvar</button>
-    <button class="button">Cancelar</button>
+    <button (click)="cancelPost()" class="button">Cancelar</button>
   </div>
   </form>
 </section>

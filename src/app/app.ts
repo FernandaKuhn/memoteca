@@ -4,11 +4,13 @@ import { Header } from "./components/header/header";
 import { Footer } from './components/footer/footer';
 import { CreatePost } from "./components/posts/create-post/create-post";
 
+
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, CreatePost],
+  standalone: true,
+  imports: [Header, Footer, CreatePost],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('memoteca');
