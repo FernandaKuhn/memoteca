@@ -1,0 +1,90 @@
+<section class="container create-post ff-inter">
+  <header class="header-create-post">
+    <h2>Adicione um <br>novo pensamento:</h2>
+  </header>
+  <form>
+    <label for="post">Pensamento</label>
+    <input
+    type="textarea"
+    class="input"
+    id="post"
+    name="post"
+    placeholder="Digite seu pensamento aqui..."
+    >
+   <label for="author">Autoria ou fonte</label>
+    <input
+    type="text"
+    class="input"
+    id="author"
+    name="author"
+    placeholder="Digite a autoria ou fonte aqui..."
+    >
+  <label for="model">Selecione o modelo do card</label>
+  <div class="container-radio">
+    <div class="radio-model">
+      <label for="model-one">
+        <input
+        type="radio"
+        id="model-one"
+        value="model-one"
+        name="model-card"
+        >
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 1</span>
+      </label>
+      Prévia:
+      <div class="model model-one ff-roboto-mono">
+        <img src="/modelo1.png" alt="Aspas azuis">
+        <p class="content">Aqui vai o pensamento</p>
+        <p class="author"><b>Aqui vai a autoria ou fonte</b></p>
+      </div>
+    </div>
+    <div class="radio-model">
+      <label for="model-two">
+        <input
+        type="radio"
+        id="model-two"
+        value="model-two"
+        name="model-card"
+        >
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 1</span>
+      </label>
+      Prévia:
+      <div class="model model-two ff-roboto-mono">
+        <img src="/modelo2.png" alt="Aspas azul claro">
+        <p class="content">Aqui vai o pensamento</p>
+        <p class="author"><b>Aqui vai a autoria ou fonte</b></p>
+      </div>
+    </div>
+    <div class="radio-model">
+      <label for="model-three">
+        <input
+        type="radio"
+        id="model-three"
+        value="model-three"
+        name="model-card"
+        >
+        <div class="custom-radio">
+          <span></span>
+        </div>
+        <span>Modelo 1</span>
+      </label>
+      Prévia:
+      <div class="model model-three ff-roboto-mono">
+        <img src="/modelo3.png" alt="Aspas verdes">
+        <p class="content">Aqui vai o pensamento</p>
+        <p class="author"><b>Aqui vai a autoria ou fonte</b></p>
+      </div>
+    </div>
+  </div>
+  <div class="action">
+    <button (click)="createPost()" class="button">Salvar</button>
+    <button class="button">Cancelar</button>
+  </div>
+  </form>
+</section>
