@@ -3,4 +3,9 @@
     <h2 class="ff-inter">Meu mural</h2>
     <button routerLink="/create-post" class="button">Adicionar pensamento</button>
   </header>
+  <div class="board">
+    <div *ngFor="let post of listPosts">
+  <app-post [post]="post"></app-post>
+  </div>
+  </div>
 </section>

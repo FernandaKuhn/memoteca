@@ -1,0 +1,13 @@
+<div class="post ff-roboto-mono post-p" [ngClass]="post.model">
+  <img [src]="imageSrc" alt="Aspas">
+  <p class="content">{{ post.content }}</p>
+  <p class="author"><b>{{ post.author }}</b></p>
+  <div class="action">
+    <button class="button-edit">
+      <img src="/icone-editar.png" alt="Ícone de editar">
+    </button>
+    <button class="button-delete">
+      <img src="/icone-deletar.png" alt="Ícone de deletar">
+    </button>
+  </div>
+</div>
