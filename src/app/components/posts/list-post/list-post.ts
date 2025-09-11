@@ -14,8 +14,8 @@ import { FormsModule } from '@angular/forms';
 export class ListPost {
 
   listPosts = [
-    { id: '1', content: 'Primeiro post', author: 'Fernanda', model: 'X' },
-    { id: '2', content: 'Segundo post', author: 'João', model: 'Y' }
+    { id: '1', content: 'Primeiro post', author: 'Fernanda', model: 'modelo1' },
+    { id: '2', content: 'Segundo post', author: 'João', model: 'modelo2' }
   ];
 
 }

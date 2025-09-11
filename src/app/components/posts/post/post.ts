@@ -16,14 +16,6 @@ export class Post {
     model: string;
   };
 
-  private imageMap: Record<string, string> = {
-    'model-one': '/modelo1.png',
-    'model-two': '/modelo2.png',
-    'model-three': '/modelo3.png'
-  };
 
-  get imageSrc(): string {
-    return this.imageMap[this.post.model] || '/modelo1.png';
-  }
 
 }
